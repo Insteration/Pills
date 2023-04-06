@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		4A75CE6B2281724100D1F494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE6A2281724100D1F494 /* AppDelegate.swift */; };
-		4A75CE6D2281724100D1F494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE6C2281724100D1F494 /* ViewController.swift */; };
+		4A75CE6D2281724100D1F494 /* PillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE6C2281724100D1F494 /* PillsViewController.swift */; };
 		4A75CE702281724100D1F494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A75CE6E2281724100D1F494 /* Main.storyboard */; };
 		4A75CE722281724300D1F494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75CE712281724300D1F494 /* Assets.xcassets */; };
 		4A75CE752281724300D1F494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A75CE732281724300D1F494 /* LaunchScreen.storyboard */; };
+		4A75CE7E2281733100D1F494 /* PillsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE7D2281733100D1F494 /* PillsModule.swift */; };
+		4A75CE802281734F00D1F494 /* PillsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE7F2281734F00D1F494 /* PillsInteractor.swift */; };
+		4A75CE822281735700D1F494 /* PillsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE812281735700D1F494 /* PillsPresenter.swift */; };
+		4A75CE842281736100D1F494 /* PillsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE832281736100D1F494 /* PillsBuilder.swift */; };
+		4A75CE862281737300D1F494 /* PillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75CE852281737300D1F494 /* PillsView.swift */; };
+		4AE0D291228195BB009228B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0D290228195BB009228B0 /* Extensions.swift */; };
+		4AE0D293228198A2009228B0 /* PillsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0D292228198A2009228B0 /* PillsStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A75CE672281724100D1F494 /* Pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A75CE6A2281724100D1F494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A75CE6C2281724100D1F494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A75CE6C2281724100D1F494 /* PillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsViewController.swift; sourceTree = "<group>"; };
 		4A75CE6F2281724100D1F494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A75CE712281724300D1F494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A75CE742281724300D1F494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A75CE762281724300D1F494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A75CE7D2281733100D1F494 /* PillsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsModule.swift; sourceTree = "<group>"; };
+		4A75CE7F2281734F00D1F494 /* PillsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsInteractor.swift; sourceTree = "<group>"; };
+		4A75CE812281735700D1F494 /* PillsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsPresenter.swift; sourceTree = "<group>"; };
+		4A75CE832281736100D1F494 /* PillsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsBuilder.swift; sourceTree = "<group>"; };
+		4A75CE852281737300D1F494 /* PillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsView.swift; sourceTree = "<group>"; };
+		4AE0D290228195BB009228B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4AE0D292228198A2009228B0 /* PillsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +68,27 @@
 		4A75CE692281724100D1F494 /* Pills */ = {
 			isa = PBXGroup;
 			children = (
+				4A75CE7D2281733100D1F494 /* PillsModule.swift */,
+				4A75CE7C2281730600D1F494 /* Pills */,
 				4A75CE6A2281724100D1F494 /* AppDelegate.swift */,
-				4A75CE6C2281724100D1F494 /* ViewController.swift */,
+				4A75CE6C2281724100D1F494 /* PillsViewController.swift */,
 				4A75CE6E2281724100D1F494 /* Main.storyboard */,
 				4A75CE712281724300D1F494 /* Assets.xcassets */,
 				4A75CE732281724300D1F494 /* LaunchScreen.storyboard */,
 				4A75CE762281724300D1F494 /* Info.plist */,
+				4AE0D290228195BB009228B0 /* Extensions.swift */,
+				4AE0D292228198A2009228B0 /* PillsStorage.swift */,
+			);
+			path = Pills;
+			sourceTree = "<group>";
+		};
+		4A75CE7C2281730600D1F494 /* Pills */ = {
+			isa = PBXGroup;
+			children = (
+				4A75CE7F2281734F00D1F494 /* PillsInteractor.swift */,
+				4A75CE812281735700D1F494 /* PillsPresenter.swift */,
+				4A75CE832281736100D1F494 /* PillsBuilder.swift */,
+				4A75CE852281737300D1F494 /* PillsView.swift */,
 			);
 			path = Pills;
 			sourceTree = "<group>";
@@ -135,8 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A75CE6D2281724100D1F494 /* ViewController.swift in Sources */,
+				4A75CE7E2281733100D1F494 /* PillsModule.swift in Sources */,
+				4A75CE862281737300D1F494 /* PillsView.swift in Sources */,
+				4A75CE6D2281724100D1F494 /* PillsViewController.swift in Sources */,
+				4AE0D291228195BB009228B0 /* Extensions.swift in Sources */,
+				4A75CE842281736100D1F494 /* PillsBuilder.swift in Sources */,
+				4A75CE822281735700D1F494 /* PillsPresenter.swift in Sources */,
 				4A75CE6B2281724100D1F494 /* AppDelegate.swift in Sources */,
+				4AE0D293228198A2009228B0 /* PillsStorage.swift in Sources */,
+				4A75CE802281734F00D1F494 /* PillsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
